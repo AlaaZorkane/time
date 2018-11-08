@@ -1,0 +1,17 @@
+/* Password input */
+.password_Container {
+    display: block;
+    position: absolute;
+    left: 49.6%;
+    top: 1%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.password {
+    padding: 10px 15px;
+    -webkit-appearance: none;
+    border: 3px solid #ffffffaf;
+    border-radius: 30px;
+    font-family: inherit;
+    color: black;
+    transition: all .15s ease;
+}

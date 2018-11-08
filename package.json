@@ -1,10 +1,26 @@
 {
   "name": "time",
-  "version": "0.1.0",
+  "version": "0.5.3",
   "private": true,
+  "maintainers": [
+    {
+      "name": "Alaa Zorkane",
+      "email": "AlaaZorkane@gmail.com",
+      "web": "https://github.com/AlaaZorkane"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "ECL-2.0",
+      "url": "https://spdx.org/licenses/ECL-2.0.html"
+    }
+  ],
   "dependencies": {
+    "howler": "^2.0.15",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1"
   },
   "scripts": {

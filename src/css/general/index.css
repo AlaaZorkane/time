@@ -1,0 +1,32 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Source+Sans+Pro:300,400');
+/* GLOBAL CSS FILE */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  color: white;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+body {
+  font-family: 'Lato', 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #232323
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
