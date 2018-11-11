@@ -1,15 +1,24 @@
 /* Libraries */
 import React, { Component } from 'react';
+import {Howl} from 'howler';
 
 /* Components */
-import Pwhandle from './Pwhandle';
 
 /* CSS & Assets */
 import '../css/components/Landing.css';
 import logo from '../assets/logo.png';
+import error from '../assets/sounds/error.wav';
+import hover from '../assets/sounds/hover.wav';
 
 /* JS */
-
+const err = new Howl({
+    src: error,
+    volume: 0.5
+});
+const hov = new Howl({
+    src: hover,
+    volume: 0.5
+});
 /* Landing page initiliazing the app "BEGIN JOURNEY" 
    Password checking added only for presentation
    to disable password change isPassword to false 
@@ -17,29 +26,28 @@ import logo from '../assets/logo.png';
 class Landing extends Component {
     constructor(props) {
         super();
+        this.props = {
+            password : "",
+            isPassword : Boolean
+        }
         this.state = {
-            isPassword: true, /* will activate this in presentation */
-            password: "",
-            confirmPassword: "emsi"
+            confirmPassword : "emsi"
         }
     }
     render() {
-        let pwhdl;
-        const { password, confirmPassword, isPassword } = this.state;
+        const { password, isPassword } = this.props;
+        const { confirmPassword } = this.state;
         function canEnter() {
-            if (password === "" && isPassword === true) {
-                alert("You need to type a password...")
+            if (password === "" && isPassword ) {
+                err.play()
             } else {
                 if ( password === confirmPassword || isPassword === false ) {
                     alert("Success!")
                     window.open("/Journey","_self")
                 } else {
-                    alert("Wrong pw...")
+                    err.play()
                 }
             }
-        }
-        if ( isPassword === true ) {
-            pwhdl = <Pwhandle password={password} confirmPassword={confirmPassword}/>;
         }
         return (
             <div className="Landing_Container">
@@ -53,18 +61,17 @@ class Landing extends Component {
                             fill="currentColor" className="octo-body"></path>
                     </svg>
                 </a>
-                {pwhdl}
                 <div className="logo_Container">
                     <img src={logo} alt="logo" className="logo"/>
                 </div>
-                    <div onClick={canEnter} className="button_Container">
+                    <div onClick={canEnter} onMouseEnter={ () => hov.play() } className="button_Container">
                         <h1 className="button_Text">
                             Begin Journey!
                         </h1>
                     </div>
                 <div className="footer_Container">
                     <p className="cp">
-                        Copyright <span className="alaa" onClick={ () => window.open("https://www.linkedin.com/in/AlaaZorkane")}>Alaa Zorkane</span> © 2018 <br />
+                        Copyright <span aria-label="Alaeeee" className="alaa" onClick={ () => window.open("https://www.linkedin.com/in/AlaaZorkane")}>Alaa Zorkane</span> © 2018 <br />
                         Protected under <span className="license" onClick= { () => window.open("https://spdx.org/licenses/ECL-2.0.html")}>ECL-2.0</span> <br/>
                         <span className="emsi" onClick= { () => window.open("http://www.emsi.ma")}>EMSI orangers</span>
                     </p>

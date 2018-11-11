@@ -7,6 +7,8 @@ import React, { Component } from 'react';
 /* CSS & Assets */
 import '../css/components/Journey.css'
 
+/* JS */
+
 /* A Brief History of Time */
 class Journey extends Component {
   render() {

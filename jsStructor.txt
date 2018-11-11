@@ -3,5 +3,5 @@
 /* CSS & Assets */
 /* JS */
 /* Class Description */
-/* exports */
+/* Exports */
 

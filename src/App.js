@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route} from "react-router-dom";
 
 /* Components */
-import Landing from './components/Landing'
+import AppContainer from './components/AppContainer'
 import Journey from './components/Journey'
 
 
@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <Router>
         <div className="container">
-          <Route exact path="/" component={Landing} />
+          <Route exact path="/" component={AppContainer} />
           <Route path="/Journey" component={Journey} />
         </div>
       </Router>

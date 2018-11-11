@@ -1,13 +1,4 @@
 /* Classes */
-.Landing_Container {
-    background-image: url("../../assets/bgLanding.jpg");
-    height: 110%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 0;
-}
-
 .logo_Container { 
     position: absolute;
     left: 50%;
@@ -19,6 +10,14 @@
     width: 50vmin;
     display: block;
     animation: float 2s ease-in infinite;
+}
+
+.button_Text {
+    padding: 10px 20px;
+    font-style: italic;
+    font-size: calc(10px + 2vmin);
+    text-transform: uppercase;
+    transition: 0.35s ease-in-out all;
 }
 
 .button_Container {
@@ -33,15 +32,6 @@
     transition: 0.35s ease-in-out all;
     cursor: pointer;
 }
-
-.button_Text {
-    padding: 10px 20px;
-    font-style: italic;
-    font-size: calc(10px + 2vmin);
-    text-transform: uppercase;
-    transition: 0.35s ease-in-out all;
-}
-
 
 .footer_Container {
     position: absolute;
