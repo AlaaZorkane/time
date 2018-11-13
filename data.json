@@ -1,0 +1,185 @@
+{
+    "dates": [
+        {
+            "id" : "pre-history",
+            "name" : "Pre History",
+            "events" : [
+                {
+                    "id" : "appearance-of-homo",
+                    "name" : "The appearance of Homo",
+                    "year" : "3 millions - 160 thousands",
+                    "youtubeID" : "dGiQaabX3_o",
+                    "keyPeople" : [
+                        {
+                            "pp1" : [
+                                {
+                                    "id" : 1,
+                                    "name" : "Homo",
+                                    "image" : ""
+                                }
+                            ],
+                            "pp2" : [
+                                {
+                                    "id" : 2,
+                                    "name" : "Homo Erectus",
+                                    "image" : ""
+                                }
+                            ],
+                            "pp3" : [
+                                {
+                                    "id" : 3,
+                                    "name" : "Homo Sapiens",
+                                    "image" : ""
+                                }
+                            ]
+                        }
+                    ],
+                    "facts" : [
+                        {
+                            "f1" : "Lorem Ipsum",
+                            "f2" : "Dolor sit amet"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id" : "ancient-history",
+            "era" : [
+                {
+                    "name" : "Ancient History",
+                    "events" : [
+                        {
+                            "name" : "",
+                            "year" : "",
+                            "youtubeID" : "",
+                            "keyPeople" : [
+                                {
+                                    "pp1" : [
+                                        {
+                                            "id" : 1,
+                                            "name" : "",
+                                            "image" : ""
+                                        }
+                                    ],
+                                    "pp2" : [
+                                        {
+                                            "id" : 2,
+                                            "name" : "",
+                                            "image" : ""
+                                        }
+                                    ],
+                                    "pp3" : [
+                                        {
+                                            "id" : 3,
+                                            "name" : "",
+                                            "image" : ""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "facts" : [
+                                {
+                                    "f1" : "",
+                                    "f2" : ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id" : "postclassical-history",
+            "era" : [
+                {
+                    "name" : "Post-Classical History",
+                    "events" : [
+                        {
+                            "name" : "",
+                            "year" : "",
+                            "youtubeID" : "",
+                            "keyPeople" : [
+                                {
+                                    "pp1" : [
+                                        {
+                                            "id" : 1,
+                                            "name" : "",
+                                            "image" : ""
+                                        }
+                                    ],
+                                    "pp2" : [
+                                        {
+                                            "id" : 2,
+                                            "name" : "",
+                                            "image" : ""
+                                        }
+                                    ],
+                                    "pp3" : [
+                                        {
+                                            "id" : 3,
+                                            "name" : "",
+                                            "image" : ""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "facts" : [
+                                {
+                                    "f1" : "",
+                                    "f2" : ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id" : "modern-history",
+            "era" : [
+                {
+                    "name" : "Modern History",
+                    "events" : [
+                        {
+                            "name" : "",
+                            "year" : "",
+                            "youtubeID" : "",
+                            "keyPeople" : [
+                                {
+                                    "pp1" : [
+                                        {
+                                            "id" : 1,
+                                            "name" : "",
+                                            "image" : ""
+                                        }
+                                    ],
+                                    "pp2" : [
+                                        {
+                                            "id" : 2,
+                                            "name" : "",
+                                            "image" : ""
+                                        }
+                                    ],
+                                    "pp3" : [
+                                        {
+                                            "id" : 3,
+                                            "name" : "",
+                                            "image" : ""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "facts" : [
+                                {
+                                    "f1" : "",
+                                    "f2" : ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

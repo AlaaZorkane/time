@@ -1,6 +1,6 @@
 /* Libraries */
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Route} from "react-router-dom"
 
 /* Components */
 import AppContainer from './components/AppContainer'
@@ -16,12 +16,11 @@ class App extends Component {
     return (
       <Router>
         <div className="container">
-          <Route exact path="/" component={AppContainer} />
-          <Route path="/Journey" component={Journey} />
+          <Route exact path="/" component={Journey} />
         </div>
       </Router>
-    );
+    )
   }
 }
 
-export default App;
+export default App

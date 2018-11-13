@@ -1,31 +1,31 @@
 /* Libraries */
-import React, { Component } from 'react';
-import {Howl} from 'howler';
+import React, { Component } from 'react'
+import {Howl} from 'howler'
 
 /* Components */
 
 /* CSS & Assets */
-import '../css/components/Landing.css';
-import logo from '../assets/logo.png';
-import error from '../assets/sounds/error.wav';
-import hover from '../assets/sounds/hover.wav';
+import '../css/components/Landing.css'
+import logo from '../assets/logo.png'
+import error from '../assets/sounds/error.wav'
+import hover from '../assets/sounds/hover.wav'
 
 /* JS */
 const err = new Howl({
     src: error,
     volume: 0.5
-});
+})
 const hov = new Howl({
     src: hover,
     volume: 0.5
-});
+})
 /* Landing page initiliazing the app "BEGIN JOURNEY" 
    Password checking added only for presentation
    to disable password change isPassword to false 
 */
 class Landing extends Component {
     constructor(props) {
-        super();
+        super()
         this.props = {
             password : "",
             isPassword : Boolean
@@ -35,8 +35,8 @@ class Landing extends Component {
         }
     }
     render() {
-        const { password, isPassword } = this.props;
-        const { confirmPassword } = this.state;
+        const { password, isPassword } = this.props
+        const { confirmPassword } = this.state
         function canEnter() {
             if (password === "" && isPassword ) {
                 err.play()
@@ -83,4 +83,4 @@ class Landing extends Component {
 
 
 /* exports */
-export default Landing; 
+export default Landing 
