@@ -7,7 +7,8 @@
                 {
                     "id" : "appearance-of-homo",
                     "name" : "The appearance of Homo",
-                    "year" : "3 millions - 160 thousands",
+                    "year" : "3 millions - 2,260 (260 BC)",
+                    "place" : "Worldwide",
                     "youtubeID" : "dGiQaabX3_o",
                     "keyPeople" : [
                         {
@@ -15,20 +16,63 @@
                                 {
                                     "id" : 1,
                                     "name" : "Homo",
-                                    "image" : ""
+                                    "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Homo_erectus_adult_female_-_head_model_-_Smithsonian_Museum_of_Natural_History_-_2012-05-17.jpg/180px-Homo_erectus_adult_female_-_head_model_-_Smithsonian_Museum_of_Natural_History_-_2012-05-17.jpg"
                                 }
                             ],
                             "pp2" : [
                                 {
                                     "id" : 2,
                                     "name" : "Homo Erectus",
-                                    "image" : ""
+                                    "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Homo_erectus_new.JPG/200px-Homo_erectus_new.JPG"
                                 }
                             ],
                             "pp3" : [
                                 {
                                     "id" : 3,
                                     "name" : "Homo Sapiens",
+                                    "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sabaa_Nissan_Militiaman.jpg/800px-Sabaa_Nissan_Militiaman.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "facts" : [
+                        {
+                            "f1" : "Human prehistory is the period between the use of the first stone tools c. 3.3 million years ago by hominins and the invention of writing systems.",
+                            "f2" : "Earliest written records were found in South Asia (Middle Indo-Aryan) and marked the end of the Prehistoric era."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id" : "ancient-history",
+            "name" : "Ancient History",
+            "events" : [
+                {
+                    "id" : "",
+                    "name" : "",
+                    "year" : "",
+                    "youtubeID" : "",
+                    "keyPeople" : [
+                        {
+                            "pp1" : [
+                                {
+                                    "id" : 1,
+                                    "name" : "",
+                                    "image" : ""
+                                }
+                            ],
+                            "pp2" : [
+                                {
+                                    "id" : 2,
+                                    "name" : "",
+                                    "image" : ""
+                                }
+                            ],
+                            "pp3" : [
+                                {
+                                    "id" : 3,
+                                    "name" : "",
                                     "image" : ""
                                 }
                             ]
@@ -44,138 +88,43 @@
             ]
         },
         {
-            "id" : "ancient-history",
-            "era" : [
-                {
-                    "name" : "Ancient History",
-                    "events" : [
-                        {
-                            "name" : "",
-                            "year" : "",
-                            "youtubeID" : "",
-                            "keyPeople" : [
-                                {
-                                    "pp1" : [
-                                        {
-                                            "id" : 1,
-                                            "name" : "",
-                                            "image" : ""
-                                        }
-                                    ],
-                                    "pp2" : [
-                                        {
-                                            "id" : 2,
-                                            "name" : "",
-                                            "image" : ""
-                                        }
-                                    ],
-                                    "pp3" : [
-                                        {
-                                            "id" : 3,
-                                            "name" : "",
-                                            "image" : ""
-                                        }
-                                    ]
-                                }
-                            ],
-                            "facts" : [
-                                {
-                                    "f1" : "",
-                                    "f2" : ""
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id" : "postclassical-history",
-            "era" : [
-                {
-                    "name" : "Post-Classical History",
-                    "events" : [
-                        {
-                            "name" : "",
-                            "year" : "",
-                            "youtubeID" : "",
-                            "keyPeople" : [
-                                {
-                                    "pp1" : [
-                                        {
-                                            "id" : 1,
-                                            "name" : "",
-                                            "image" : ""
-                                        }
-                                    ],
-                                    "pp2" : [
-                                        {
-                                            "id" : 2,
-                                            "name" : "",
-                                            "image" : ""
-                                        }
-                                    ],
-                                    "pp3" : [
-                                        {
-                                            "id" : 3,
-                                            "name" : "",
-                                            "image" : ""
-                                        }
-                                    ]
-                                }
-                            ],
-                            "facts" : [
-                                {
-                                    "f1" : "",
-                                    "f2" : ""
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "id" : "modern-history",
-            "era" : [
+            "name" : "Modern History",
+            "events" : [
                 {
-                    "name" : "Modern History",
-                    "events" : [
+                    "id" : "",
+                    "name" : "",
+                    "year" : "",
+                    "youtubeID" : "",
+                    "keyPeople" : [
                         {
-                            "name" : "",
-                            "year" : "",
-                            "youtubeID" : "",
-                            "keyPeople" : [
+                            "pp1" : [
                                 {
-                                    "pp1" : [
-                                        {
-                                            "id" : 1,
-                                            "name" : "",
-                                            "image" : ""
-                                        }
-                                    ],
-                                    "pp2" : [
-                                        {
-                                            "id" : 2,
-                                            "name" : "",
-                                            "image" : ""
-                                        }
-                                    ],
-                                    "pp3" : [
-                                        {
-                                            "id" : 3,
-                                            "name" : "",
-                                            "image" : ""
-                                        }
-                                    ]
+                                    "id" : 1,
+                                    "name" : "",
+                                    "image" : ""
                                 }
                             ],
-                            "facts" : [
+                            "pp2" : [
                                 {
-                                    "f1" : "",
-                                    "f2" : ""
+                                    "id" : 2,
+                                    "name" : "",
+                                    "image" : ""
+                                }
+                            ],
+                            "pp3" : [
+                                {
+                                    "id" : 3,
+                                    "name" : "",
+                                    "image" : ""
                                 }
                             ]
+                        }
+                    ],
+                    "facts" : [
+                        {
+                            "f1" : "Lorem Ipsum",
+                            "f2" : "Dolor sit amet"
                         }
                     ]
                 }

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route} from "react-router-dom"
 
 /* Components */
-import AppContainer from './components/AppContainer'
+// import AppContainer from './components/AppContainer'
 import Journey from './components/Journey'
 
 
@@ -14,11 +14,7 @@ import './css/general/App.css'
 class App extends Component {
   render() {
     return (
-      <Router>
-        <div className="container">
-          <Route exact path="/" component={Journey} />
-        </div>
-      </Router>
+      <Journey />
     )
   }
 }

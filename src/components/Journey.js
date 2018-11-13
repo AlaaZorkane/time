@@ -9,15 +9,17 @@ import '../css/components/Journey.css'
 
 /* JS */
 
-/* A Brief History of Time */
-class Journey extends Component {
-  constructor() {
-    super()
-    this.props = {
+/* Journey calls from noSQL json server 
+  and parses it into to the DOM
+*/
 
-    }
+class Journey extends Component {
+  constructor(props) {
+    super()
     this.state = {
-      dates : []
+      dates : [],
+      canForward : Boolean,
+      canBackward : Boolean
     }
   }
 
