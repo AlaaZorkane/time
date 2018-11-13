@@ -6,9 +6,9 @@
             "events" : [
                 {
                     "id" : "appearance-of-homo",
-                    "name" : "The appearance of Homo",
-                    "year" : "3 millions - 2,260 (260 BC)",
-                    "place" : "Worldwide",
+                    "name" : "The Appearance of Homo",
+                    "year" : "3 millions",
+                    "place" : "Africa - Jebel Irhoud, Morocco",
                     "youtubeID" : "dGiQaabX3_o",
                     "keyPeople" : [
                         {
@@ -16,29 +16,31 @@
                                 {
                                     "id" : 1,
                                     "name" : "Homo",
+                                    "info" : "https://en.wikipedia.org/wiki/Homo",
                                     "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Homo_erectus_adult_female_-_head_model_-_Smithsonian_Museum_of_Natural_History_-_2012-05-17.jpg/180px-Homo_erectus_adult_female_-_head_model_-_Smithsonian_Museum_of_Natural_History_-_2012-05-17.jpg"
                                 }
                             ],
                             "pp2" : [
                                 {
                                     "id" : 2,
-                                    "name" : "Homo Erectus",
-                                    "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Homo_erectus_new.JPG/200px-Homo_erectus_new.JPG"
+                                    "name" : "Homo habilis",
+                                    "info" : "https://en.wikipedia.org/wiki/Homo_habilis",
+                                    "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Homo_habilis.JPG/200px-Homo_habilis.JPG"
                                 }
                             ],
                             "pp3" : [
                                 {
                                     "id" : 3,
-                                    "name" : "Homo Sapiens",
-                                    "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sabaa_Nissan_Militiaman.jpg/800px-Sabaa_Nissan_Militiaman.jpg"
+                                    "name" : "Homo Erectus",
+                                    "info" : "https://en.wikipedia.org/wiki/Homo_erectus",
+                                    "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Homo_erectus_new.JPG/200px-Homo_erectus_new.JPG"
                                 }
                             ]
                         }
                     ],
                     "facts" : [
                         {
-                            "f1" : "Human prehistory is the period between the use of the first stone tools c. 3.3 million years ago by hominins and the invention of writing systems.",
-                            "f2" : "Earliest written records were found in South Asia (Middle Indo-Aryan) and marked the end of the Prehistoric era."
+                            "f1" : "Hom is the genus that encompasses the extant species Homo sapiens (modern humans), plus several extinct species classified as either ancestral to or closely related to modern humans (depending on a species), most notably Homo erectus and Homo neanderthalensis."
                         }
                     ]
                 }
