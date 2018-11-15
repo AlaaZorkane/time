@@ -17,16 +17,21 @@ class Journey extends Component {
   constructor(props) {
     super()
     this.state = {
-      dates : [],
+      era : [
+        { 
+          "id" : 
+        }
+      ],
       canForward : Boolean,
       canBackward : Boolean
     }
   }
 
   async componentDidmount() {
-    const dates = await ( await fetch("http://localhost:3004/dates") ).json()
-    this.setState({ dates })
-    console.log(dates)
+    const { era } = this.state
+    const data = await fetch( `http://localhost:3004/${era[0].id}` )
+    this.setState({ era : data })
+    console.log(data)
   }
 
   render() {

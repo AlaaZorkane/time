@@ -1,219 +1,50 @@
 {
-    "dates": [
+    "pre-history" : [
         {
             "id" : "pre-history",
             "name" : "Pre History",
             "events" : [
                 {
-                    "id" : "appearance-of-homo",
-                    "name" : "The Appearance of Homo",
-                    "year" : "3 millions",
-                    "place" : "Africa - Jebel Irhoud, Morocco",
-                    "youtubeID" : "dGiQaabX3_o",
-                    "keyPeople" : [
+                "appearance-of-homo" : [
+                    {
+                        "name" : "The Appearance of Homo",
+                        "year" : "3 millions",
+                        "place" : "Africa - Jebel Irhoud, Morocco",
+                        "youtubeID" : "dGiQaabX3_o",
+                        "keyPeople" : [
                         {
-                            "pp1" : [
+                            "homo" : [
                                 {
-                                    "id" : 1,
                                     "name" : "Homo",
                                     "info" : "https://en.wikipedia.org/wiki/Homo",
                                     "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Homo_erectus_adult_female_-_head_model_-_Smithsonian_Museum_of_Natural_History_-_2012-05-17.jpg/180px-Homo_erectus_adult_female_-_head_model_-_Smithsonian_Museum_of_Natural_History_-_2012-05-17.jpg"
                                 }
                             ],
-                            "pp2" : [
+                            "homo-habilis" : [
                                 {
-                                    "id" : 2,
                                     "name" : "Homo habilis",
                                     "info" : "https://en.wikipedia.org/wiki/Homo_habilis",
                                     "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Homo_habilis.JPG/200px-Homo_habilis.JPG"
                                 }
                             ],
-                            "pp3" : [
+                            "homo-erectus" : [
                                 {
-                                    "id" : 3,
                                     "name" : "Homo Erectus",
                                     "info" : "https://en.wikipedia.org/wiki/Homo_erectus",
                                     "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Homo_erectus_new.JPG/200px-Homo_erectus_new.JPG"
                                 }
                             ]
                         }
-                    ],
-                    "facts" : [
+                        ],
+                        "facts" : [
                         {
                             "f1" : "Homo is the genus that encompasses the extant species Homo sapiens (modern humans), plus several extinct species classified as either ancestral to or closely related to modern humans (depending on a species), most notably Homo erectus and Homo habilis."
                         }
-                    ]
-                },
-                {
-                    "id" : "stone-age",
-                    "name" : "Stone Age",
-                    "year" : "3 millions",
-                    "place" : "Africa - Jebel Irhoud, Morocco",
-                    "youtubeID" : "dGiQaabX3_o",
-                    "keyPeople" : [
-                        {
-                            "pp1" : [
-                                {
-                                    "id" : 1,
-                                    "name" : "Homo",
-                                    "info" : "https://en.wikipedia.org/wiki/Homo",
-                                    "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Homo_erectus_adult_female_-_head_model_-_Smithsonian_Museum_of_Natural_History_-_2012-05-17.jpg/180px-Homo_erectus_adult_female_-_head_model_-_Smithsonian_Museum_of_Natural_History_-_2012-05-17.jpg"
-                                }
-                            ],
-                            "pp2" : [
-                                {
-                                    "id" : 2,
-                                    "name" : "Homo habilis",
-                                    "info" : "https://en.wikipedia.org/wiki/Homo_habilis",
-                                    "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Homo_habilis.JPG/200px-Homo_habilis.JPG"
-                                }
-                            ],
-                            "pp3" : [
-                                {
-                                    "id" : 3,
-                                    "name" : "Homo Erectus",
-                                    "info" : "https://en.wikipedia.org/wiki/Homo_erectus",
-                                    "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Homo_erectus_new.JPG/200px-Homo_erectus_new.JPG"
-                                }
-                            ]
-                        }
-                    ],
-                    "facts" : [
-                        {
-                            "f1" : "Homo is the genus that encompasses the extant species Homo sapiens (modern humans), plus several extinct species classified as either ancestral to or closely related to modern humans (depending on a species), most notably Homo erectus and Homo habilis."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id" : "ancient-history",
-            "name" : "Ancient History",
-            "events" : [
-                {
-                    "id" : "",
-                    "name" : "",
-                    "year" : "",
-                    "youtubeID" : "",
-                    "keyPeople" : [
-                        {
-                            "pp1" : [
-                                {
-                                    "id" : 1,
-                                    "name" : "",
-                                    "image" : ""
-                                }
-                            ],
-                            "pp2" : [
-                                {
-                                    "id" : 2,
-                                    "name" : "",
-                                    "image" : ""
-                                }
-                            ],
-                            "pp3" : [
-                                {
-                                    "id" : 3,
-                                    "name" : "",
-                                    "image" : ""
-                                }
-                            ]
-                        }
-                    ],
-                    "facts" : [
-                        {
-                            "f1" : "Lorem Ipsum",
-                            "f2" : "Dolor sit amet"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id" : "post-classical",
-            "name" : "Post Classical",
-            "events" : [
-                {
-                    "id" : "",
-                    "name" : "",
-                    "year" : "",
-                    "youtubeID" : "",
-                    "keyPeople" : [
-                        {
-                            "pp1" : [
-                                {
-                                    "id" : 1,
-                                    "name" : "",
-                                    "image" : ""
-                                }
-                            ],
-                            "pp2" : [
-                                {
-                                    "id" : 2,
-                                    "name" : "",
-                                    "image" : ""
-                                }
-                            ],
-                            "pp3" : [
-                                {
-                                    "id" : 3,
-                                    "name" : "",
-                                    "image" : ""
-                                }
-                            ]
-                        }
-                    ],
-                    "facts" : [
-                        {
-                            "f1" : "Lorem Ipsum",
-                            "f2" : "Dolor sit amet"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id" : "modern-history",
-            "name" : "Modern History",
-            "events" : [
-                {
-                    "id" : "",
-                    "name" : "",
-                    "year" : "",
-                    "youtubeID" : "",
-                    "keyPeople" : [
-                        {
-                            "pp1" : [
-                                {
-                                    "id" : 1,
-                                    "name" : "",
-                                    "image" : ""
-                                }
-                            ],
-                            "pp2" : [
-                                {
-                                    "id" : 2,
-                                    "name" : "",
-                                    "image" : ""
-                                }
-                            ],
-                            "pp3" : [
-                                {
-                                    "id" : 3,
-                                    "name" : "",
-                                    "image" : ""
-                                }
-                            ]
-                        }
-                    ],
-                    "facts" : [
-                        {
-                            "f1" : "Lorem Ipsum",
-                            "f2" : "Dolor sit amet"
-                        }
-                    ]
+                        ]
+                    }
+                    ]    
                 }
             ]
         }
-    ]
-}
+    ]    
+}        

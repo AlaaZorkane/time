@@ -4,7 +4,10 @@ import { BrowserRouter as Router, Route} from "react-router-dom"
 
 /* Components */
 // import AppContainer from './components/AppContainer'
-import Journey from './components/Journey'
+// import Journey from './components/Journey'
+import Main from './components/Main'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 
 /* CSS & Assets */
@@ -14,7 +17,11 @@ import './css/general/App.css'
 class App extends Component {
   render() {
     return (
-      <Journey />
+      <div className="Container">
+        <Header />
+        <Main />
+        <Footer />
+      </div>
     )
   }
 }

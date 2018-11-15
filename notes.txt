@@ -1,21 +1,18 @@
 /* notes, commands, reminders, ToDOs etc.. */
 
+
+
+
+
+
+
+
+
+
+
 ./node_modules/.bin/json-server --watch data.json --port 3004
 
+λ node_modules\.bin\json-server --watch ..\..\data.json --port 3004
+
 json-server --watch ..\..\data.json --port 3004
-
-
-                            "pp2" : [
-                                {
-                                    "id" : 2,
-                                    "name" : "Homo Erectus",
-                                    "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Homo_erectus_new.JPG/200px-Homo_erectus_new.JPG"
-                                }
-                            ],
-                            "pp3" : [
-                                {
-                                    "id" : 3,
-                                    "name" : "Homo Sapiens",
-                                    "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sabaa_Nissan_Militiaman.jpg/800px-Sabaa_Nissan_Militiaman.jpg"
-                                }
-                            ]
+npm-run-all --parallel react-scripts "json-server --watch ../../data.json --port 3004"
