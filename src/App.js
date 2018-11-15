@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route} from "react-router-dom"
 // import Journey from './components/Journey'
 import Main from './components/Main'
 import Header from './components/Header'
+import MusicControl from './components/MusicControl'
 import Footer from './components/Footer'
 
 
@@ -20,6 +21,7 @@ class App extends Component {
       <div className="Container">
         <Header />
         <Main />
+        <MusicControl />
         <Footer />
       </div>
     )

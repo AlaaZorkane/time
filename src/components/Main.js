@@ -52,12 +52,12 @@ class Main extends Component {
             }),
             new Howl({ // [1]
                 src: popupClose,
-                volume: 0.5,
+                volume: 0.2,
                 rate : 0.7
             }),
             new Howl({ // [2]
                 src: popupClose,
-                volume: 0.5,
+                volume: 0.2,
                 rate : 0.4
             })
         ]

@@ -17,9 +17,12 @@ class MainPopup extends Component {
         }
     }
     render() {
+        const test = {
+            color : 'black'
+        }
         return (
             <div className="MainPopup">
-                <h1>HHHHHHHHHHHHHHHHHHHHHHHHHHHH</h1>
+                <h1 style={test}>Test</h1>
             </div>
         );
     }
