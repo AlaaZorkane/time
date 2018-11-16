@@ -53,9 +53,14 @@ class Main extends Component {
                     onOpen={ () => {soundEffects[1].play(); soundEffects[0].stop()} }
                     onClose= { () => soundEffects[2].play() }
                     modal> 
-                    <div className="MainPopup">
-                        <h1 className="login_Title">form popup lorem ipsum</h1>
-                    </div>
+                    {close => (
+                        <div className="MainPopup">
+                            <a className="close" onClick={close}>
+                                &times;
+                            </a>
+                            <h1 className="login_Title">form popup lorem ipsum</h1>
+                        </div>
+                    )}
                 </Popup>
             </div>
         )

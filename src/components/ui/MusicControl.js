@@ -30,7 +30,7 @@ class MusicControl extends Component {
     render() {
         const { playing } = this.state;
         function play() {
-            if ( i == 0 ) {
+            if ( i === 0 ) {
                 int.play()
             }
             int.mute(false)
