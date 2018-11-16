@@ -11,7 +11,7 @@
 .logo_Container { 
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 38%;
     transform: translateX(-50%) translateY(-50%);
 }
 
@@ -25,7 +25,7 @@
     z-index: 2;
     position: absolute;
     left: 50%;
-    top: 13%;
+    top: 61.5%;
     transform: translateX(-50%) translateY(-50%);
     transition: all 3s ease-in-out;
 }
