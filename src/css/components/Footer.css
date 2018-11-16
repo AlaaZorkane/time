@@ -1,0 +1,43 @@
+.Footer {
+    position: absolute;
+    text-align: center;
+    left: 49.6%;
+    bottom: -3.5%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* Elements */
+.cp {
+    font-size: calc(3px + 2vmin);
+    font-family: 'Source Sans Pro'
+}
+.alaa {
+    font-weight: bold;
+    color: #ffcf32;
+    font-style: bold;
+    transition: 0.35s ease-in-out all;
+    cursor: pointer;
+}
+
+.emsi {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #06a53e;
+}
+
+/* Hovers */
+.alaa:hover {
+    color: #0debaf;
+    text-decoration: underline;
+}
+.license:hover {
+    color: #06a77d;
+    text-decoration: underline;
+    transition: 0.35s ease-in-out all;
+    cursor: pointer;
+}
+.emsi:hover {
+    color: #057e2f;
+    text-decoration: underline;
+    cursor: pointer;
+}

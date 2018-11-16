@@ -1,0 +1,57 @@
+.Main {
+    background-image: url("../../assets/bgLanding.jpg");
+    height: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0
+}
+
+/* Body Logo */
+.logo_Container { 
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.logo {
+    width: 50vmin;
+    display: block;
+    animation: float 2s ease-in infinite;
+}
+/* Button */
+.MainButton {
+    display: block;
+    position: absolute;
+    left: 49.6%;
+    top: 70%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 3px solid #ffffffaf;
+    border-radius: 30px;
+    transition: 0.35s ease-in-out all;
+    cursor: pointer;
+    /* padding: 10px 20px; */
+    font-style: italic;
+    font-size: calc(10px + 2vmin);
+    text-transform: uppercase;
+    transition: 0.35s ease-in-out all;
+}
+
+.button_Container {
+
+}
+.button_Text:hover {
+    color: #f3c52e;
+}
+.button_Container:hover {
+    background-color: rgba(0, 0, 0, 0.479);
+    border: 3px solid #ffffffd5;
+}
+
+/* Animations */
+@keyframes float {
+	from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 7px); }
+    to   { transform: translate(0, -0px); }
+}

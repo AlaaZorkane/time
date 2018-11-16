@@ -1,0 +1,13 @@
+.MusicControl {
+    z-index: 2;
+    position: absolute;
+    left: 4%;
+    top: 95%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 4s ease-in-out;
+    cursor: pointer;
+}
+.speaker {
+    width: 5vmin;
+    display: block;
+}

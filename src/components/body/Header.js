@@ -4,6 +4,7 @@ import React, { Component } from 'react'
 /* Components */
 
 /* CSS & Assets */
+import "../../css/components/Header.css"
 
 /* JS */
 

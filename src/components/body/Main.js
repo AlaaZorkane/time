@@ -4,14 +4,14 @@ import {Howl} from 'howler'
 import Popup from 'reactjs-popup'
 
 /* Components */
-import MainPopup from './MainPopup'
+import MainPopup from '../ui/MainPopup'
 
 /* CSS & Assets */
-import '../css/components/Landing.css'
-import logo from '../assets/logo.png'
-import hover from '../assets/sounds/hover.wav'
+import '../../css/components/Main.css'
+import logo from '../../assets/logo.png'
+import hover from '../../assets/sounds/hover.wav'
 // import popupOpen from '../assets/sounds/popupOpen.wav'
-import popupClose from '../assets/sounds/popupClose.wav'
+import popupClose from '../../assets/sounds/popupClose.wav'
 
 
 /* JS */
@@ -67,7 +67,7 @@ class Main extends Component {
                     <img src={logo} alt="logo" className="logo"/>
                 </div>
                 <Popup
-                    trigger={<button onMouseEnter={ () => soundEffects[0].play()} className="button_Container">
+                    trigger={<button onMouseEnter={ () => soundEffects[0].play()} className="MainButton">
                                 LOGIN
                             </button>}
                     onOpen={ () => {soundEffects[1].play(); soundEffects[0].stop()} }

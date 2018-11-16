@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Route} from "react-router-dom"
 /* Components */
 // import AppContainer from './components/AppContainer'
 // import Journey from './components/Journey'
-import Main from './components/Main'
-import Header from './components/Header'
-import MusicControl from './components/MusicControl'
-import Footer from './components/Footer'
+import Main from './components/body/Main'
+import Header from './components/body/Header'
+import MusicControl from './components/ui/MusicControl'
+import Footer from './components/body/Footer'
 
 
 /* CSS & Assets */
@@ -18,9 +18,9 @@ import './css/general/App.css'
 class App extends Component {
   render() {
     return (
-      <div className="Container">
-        <Header />
+      <div className="container">
         <Main />
+        <Header />
         <MusicControl />
         <Footer />
       </div>

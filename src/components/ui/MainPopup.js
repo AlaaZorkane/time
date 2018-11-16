@@ -3,6 +3,7 @@
 
  /* Components */
  /* CSS & Assets */
+ import "../../css/components/MainPopup.css"
  /* JS */
 
  /* Popup - Handles user information into the database & renders the journey into the dom */
