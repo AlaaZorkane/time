@@ -3,7 +3,7 @@
 
  /* Components */
  /* CSS & Assets */
- import "../../css/components/MainPopup.css"
+ import "../../css/components/ui/MainPopup.css"
  /* JS */
 
  /* Popup - Handles user information into the database & renders the journey into the dom */
@@ -18,13 +18,8 @@ class MainPopup extends Component {
         }
     }
     render() {
-        const test = {
-            color : 'black'
-        }
         return (
-            <div className="MainPopup">
-                <h1 style={test}>Test</h1>
-            </div>
+
         );
     }
 }

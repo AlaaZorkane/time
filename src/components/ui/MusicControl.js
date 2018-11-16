@@ -4,7 +4,7 @@ import {Howl} from 'howler'
 
 /* Components */
 /* CSS & Assets */
-import "../../css/components/MusicControl.css"
+import "../../css/components/ui/MusicControl.css"
 import speakerON from "../../assets/ui/speakerON.svg"
 import speakerOFF from "../../assets/ui/speakerOFF.svg"
 import intro from '../../assets/intro.ogg'

@@ -1,5 +1,5 @@
 /* Imports */
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Source+Sans+Pro:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Source+Sans+Pro:300,400|Antic');
 /* GLOBAL CSS FILE */
 *,
 *::after,
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', 'Source Sans Pro', 'Antic', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;

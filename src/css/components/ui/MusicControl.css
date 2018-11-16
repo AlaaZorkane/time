@@ -1,0 +1,23 @@
+.MusicControl {
+    z-index: 2;
+    position: absolute;
+    left: 4%;
+    top: 95%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 3s ease-in-out;
+    cursor: pointer;
+    font-size: calc(0.13rem + 2vmin);
+    font-family: 'Source Sans Pro'
+}
+.speaker {
+    width: 5vmin;
+    display: block;
+    transition: all .2s ease-in-out;
+}
+.speaker:hover {
+    transform: scale(1.1)
+}
+.speaker:active {
+    transform: scale(1.2);
+    fill: rgb(251, 47, 47);
+}

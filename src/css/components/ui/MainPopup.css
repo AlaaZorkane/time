@@ -1,3 +1,12 @@
+.MainPopup {
+    font-size: calc(0.3rem + 2vmin);
+    font-family: 'Antic';
+    color: black;
+}
+
+
+
+
 .password {
     display: block;
     position: absolute;
