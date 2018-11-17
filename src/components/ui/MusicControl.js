@@ -7,12 +7,12 @@ import {Howl} from 'howler'
 import "../../css/components/ui/MusicControl.css"
 import speakerON from "../../assets/ui/speakerON.svg"
 import speakerOFF from "../../assets/ui/speakerOFF.svg"
-import intro from '../../assets/intro.ogg'
+import intro2 from '../../assets/intro2.mp3'
 
 /* JS */
 let i = 0;
 const int = new Howl({
-    src: intro,
+    src: intro2,
     volume: 0.5,
     loop: true
 })
