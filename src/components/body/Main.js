@@ -4,6 +4,7 @@ import {Howl} from 'howler'
 import Popup from 'reactjs-popup'
 
 /* Components */
+import LoginForm from '../ui/LoginForm'
 
 /* CSS & Assets */
 import '../../css/components/Main.css'
@@ -58,7 +59,9 @@ class Main extends Component {
                             <a className="close" onClick={close}>
                                 &times;
                             </a>
-                            <h1 className="login_Title">form popup lorem ipsum</h1>
+                            <h1 className="login_Title">Begin Your <span className="journey">Journey</span>!</h1>
+                            <hr/>
+                            <LoginForm />
                         </div>
                     )}
                 </Popup>

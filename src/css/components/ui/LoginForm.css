@@ -1,0 +1,80 @@
+.login_Title {
+    font-family: 'Source Sans Pro';
+    display: inline-block;
+    padding: 2rem 0 0.5rem;
+    color: #272727
+}
+.journey {
+    color: #4700ff;
+}
+
+
+.LoginForm {
+    font-family: 'Source Sans Pro';
+    padding: 1rem 0rem 0rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.prof {
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+}
+label {
+    order: 1;
+    padding-right: 1rem;
+    font-weight: 500;
+}
+.input_field {
+    padding: 0.5rem 0;
+    display: block;
+    order: 2;
+    flex: 1 1 auto;
+}
+#user_type {
+    padding: 0px 18px;
+}
+input, select {
+    background: #fafbfc;
+    color: #1f1f1f;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 1.4px solid rgba(0, 0, 0, 0.452);
+    border-radius: 0.2rem;
+    outline: 0;
+    padding: 6px 18px;
+    transition: all 0.2s ease-in-out;
+    order: 2;
+}
+
+input:focus, select:focus {
+    border-color: #4800ff96;
+    box-shadow: 0 2px 4px 0 #4800ff96;
+}
+
+/* Launch Button */
+.btn_container {
+    display: block;
+    padding: 3rem 0;
+}
+.btn {
+    font-size: calc(0.2rem + 2vmin);
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #313638;
+    font-family: 'Lato';
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    border: 3.4px solid #313638;
+    border-radius: 30px;
+    padding: 0.9rem 4.5rem;
+}
+.btn:hover {
+    background-color: rgb(78, 78, 255);
+    border: 3.8px solid ;
+    font-weight: bold;
+    color: white;
+    border-color: rgb(78, 78, 255);
+}

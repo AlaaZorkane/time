@@ -13,7 +13,7 @@
 }
 .alaa {
     font-weight: bold;
-    color: #ffcf32de;
+    color: #ffc43dde;
     font-style: bold;
     transition: 0.35s ease-in-out all;
     cursor: pointer;
@@ -22,22 +22,22 @@
 .emsi {
     text-transform: uppercase;
     font-weight: bold;
-    color: #ffcf32de;
+    color: #ffc43dde;
 }
 
 /* Hovers */
 .alaa:hover {
-    color: #ffcf32;
+    color: #ffc43d;
     text-decoration: underline;
 }
 .license:hover {
-    color: #ffcf32;
+    color: #ffc43d;
     text-decoration: underline;
     transition: 0.35s ease-in-out all;
     cursor: pointer;
 }
 .emsi:hover {
-    color: #ffcf32;
+    color: #ffc43d;
     text-decoration: underline;
     transition: 0.35s ease-in-out all;
     cursor: pointer;

@@ -11,6 +11,7 @@ hr {
     margin-right: auto;
     color: rgba(42, 42, 42, 0.644);
     width: 5rem;
+    opacity: 0.5
 }
 .question_Container {
     z-index: 2;
