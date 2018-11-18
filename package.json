@@ -11,8 +11,8 @@
   ],
   "licenses": [
     {
-      "name": "ECL-2.0",
-      "url": "https://spdx.org/licenses/ECL-2.0.html"
+      "name": "GNU GPLv3",
+      "url": "https://choosealicense.com/licenses/gpl-3.0/"
     }
   ],
   "dependencies": {
