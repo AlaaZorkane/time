@@ -1,13 +1,14 @@
 /* Libraries */
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route} from "react-router-dom"
+import { BrowserRouter, Route, Switch} from "react-router-dom"
 
 /* Components */
-import Main from './components/body/Main'
-import Header from './components/body/Header'
+import Main from './components/layout/Main'
+import Header from './components/layout/Header'
 import MusicControl from './components/ui/MusicControl'
-import Footer from './components/body/Footer'
 import About from './components/ui/About'
+
+import Journey from './components/journey/Journey'
 
 /* Static js */
 
@@ -18,13 +19,17 @@ import './css/general/App.css'
 class App extends Component {
   render() {
     return (
-      <div className="container">
-        <Main />
-        <Header />
-        <MusicControl />
-        <About />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <div className="container">
+          <Header />
+          <Switch>
+            <Route exact path='/'component={Main}/>
+            <Route path='/journey/:id'component={Journey}/>
+          </Switch>
+          <MusicControl />
+          <About />
+        </div>
+      </BrowserRouter>
     )
   }
 }

@@ -5,6 +5,7 @@ import Popup from 'reactjs-popup'
 
 /* Components */
 import LoginForm from '../ui/LoginForm'
+import Footer from './Footer'
 
 /* CSS & Assets */
 import '../../css/components/Main.css'
@@ -65,6 +66,7 @@ class Main extends Component {
                         </div>
                     )}
                 </Popup>
+                <Footer />
             </div>
         )
     }

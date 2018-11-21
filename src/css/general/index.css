@@ -20,6 +20,12 @@ html {
   color: white;
   -moz-user-select: none;
   user-select: none;
+  background-color: #232323;
+  background: url("../../assets/bgLanding.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 120%;
+  z-index: 0
 }
 
 body {
@@ -28,7 +34,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
   box-sizing: border-box;
-  background-color: #232323
+  z-index: 0
 }
 
 code {
