@@ -1,10 +1,5 @@
 .Main {
-    background-image: url("../../assets/bgLanding.jpg");
-    height: 110%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 0
+
 }
 
 /* Body Logo */

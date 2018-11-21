@@ -16,12 +16,18 @@
     }
   ],
   "dependencies": {
+    "firebase": "^5.5.8",
     "howler": "^2.0.15",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
+    "react-redux": "^5.1.1",
+    "react-redux-firebase": "^2.2.2",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
-    "reactjs-popup": "^1.3.1"
+    "reactjs-popup": "^1.3.1",
+    "redux": "^4.0.1",
+    "redux-firestore": "^0.6.0",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "dev": "yarn start && start && wait",
