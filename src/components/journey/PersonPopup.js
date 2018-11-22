@@ -1,15 +1,17 @@
 /* Libraries */
-import React, { Fragment } from 'react'
+import React from 'react'
 /* Components */
 /* CSS & Assets */
 /* JS */
 /* Class Description */
 const PersonPopup = ({name, desc}) => {
     return (
-        <Fragment>
+        <div className="person-wrapper">
             <h1>name : {name}</h1>
-            <p>desc : {desc} </p>
-        </Fragment>
+            <div className="description-wrapper">
+                <p>desc : {desc} </p>
+            </div>   
+        </div>
     )
 }
 /* Exports */
