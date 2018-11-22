@@ -10,6 +10,7 @@ import Controls from './Controls'
 
 /* CSS & Assets */
 import '../../css/components/journey/Journey.css'
+import infinityloading from '../../assets/infinityloading.svg'
 
 /* JS */
 
@@ -20,16 +21,18 @@ import '../../css/components/journey/Journey.css'
 const Journey = (props) => {
   const { event } = props
   if (event) {
+     return (
+       <div className="Journey-Container">
+         <Body event={props.event}/>
+         <Controls />
+       </div>
+     )
+   } else {
     return (
       <div className="Journey-Container">
-        <Body event={props.event}/>
-        {/*<Controls />*/}
-      </div>
-    )
-  } else {
-    return (
-      <div className="Journey-Container">
-        Loading...
+        <div className="loading-wrapper">
+          <img src={infinityloading} alt="loading"/>
+        </div>
       </div>
     )
   }
