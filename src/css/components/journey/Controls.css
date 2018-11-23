@@ -1,0 +1,85 @@
+.Controls {
+    font-size: 10px;
+}
+/* RIGHT */
+.right-wrapper {
+    z-index: 5;
+    position: absolute;
+    left: 88%;
+    top: 80%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    
+}
+.right-control {
+    width: 10vmin;
+    display: block;
+    transition: all .2s ease-in-out;
+}
+
+/* LEFT */
+.left-wrapper {
+    z-index: 5;
+    position: absolute;
+    left: 12%;
+    top: 80%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.left-control {
+    width: 10vmin;
+    display: block;
+    transform: scaleX(-1);
+    transition: all .2s ease-in-out;
+}
+
+/* HOVER EFFECTS */
+.left-control:hover, .right-control:hover {
+    padding: 0.8rem;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background-color: #17061c;
+}
+.left-control:hover {
+    animation: moveleft 1s ease-in-out infinite;
+}
+.right-control:hover {
+    animation: move 1s ease-in-out infinite;
+}
+
+@keyframes move {
+    from { transform: translateX(0); }
+    50%  { transform: translateX(7px); }
+    60%  { transform: translateX(6px); }
+    90%  { transform: translateX(2px); }
+    to   { transform: translateX(0); }
+}
+@keyframes moveleft {
+    from { transform: translateX(0) scaleX(-1); }
+    50%  { transform: translateX(7px) scaleX(-1); }
+    60%  { transform: translateX(6px) scaleX(-1); }
+    90%  { transform: translateX(2px) scaleX(-1); }
+    to   { transform: translateX(0) scaleX(-1); }
+}
+
+
+/* Responsive */
+
+@media (max-height: 35rem) {
+    .left-wrapper {
+        left: 3.9%;
+    }
+    .right-wrapper {
+        left: 96.1%; 
+    }
+  }
+@media (max-width: 55rem) {
+    .left-wrapper {
+        left: 5%;
+    }
+    .right-wrapper {
+        left: 95%; 
+    }
+  }

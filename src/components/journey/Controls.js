@@ -6,6 +6,8 @@ import React, { Component } from 'react'
 
 /* CSS & Assets */
 import '../../css/components/journey/Controls.css'
+import arrow from '../../assets/ui/arrow.svg'
+
 
 /* JS */
 
@@ -24,8 +26,12 @@ class Journey extends Component {
   render() {
     return (
         <div className="Controls">
-          <h1 className="forward">forward</h1>
-          <h1 className="backward">backward</h1>
+          <div className="right-wrapper">
+            <img src={arrow} alt="forward" className="right-control"/>
+          </div>
+          <div className="left-wrapper">
+            <img src={arrow} alt="backward" className="left-control"/>
+          </div>
         </div>
     )
   }
