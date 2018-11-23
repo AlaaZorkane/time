@@ -1,0 +1,44 @@
+.person-wrapper {
+    font-family: 'Source Sans Pro';
+    padding: 2rem;
+    align-items: center;
+    font-size: calc( 0.5rem + 2vmin  );
+    font-weight: 400
+}
+.person-wrapper h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: calc( 3rem + 2vmin )
+}
+.separator {
+    position: relative;
+    margin: 1em 0;
+}
+.separator span {
+    background-color: #fff;
+    padding: 0 0.4em;
+    position: relative;
+    z-index: 1;
+    color: rgba(77, 77, 77, 0.596);
+    font-family: 'Italianno', cursive;
+    font-size: calc(12px + 2vmin)
+}
+.separator::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.description-wrapper a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.664)
+}
+.description-wrapper a:hover {
+    color: rgb(93, 44, 255);
+    text-decoration: underline;
+}
