@@ -9,6 +9,8 @@ import MusicControl from './components/ui/MusicControl'
 import About from './components/ui/About'
 
 import Journey from './components/journey/Journey'
+import Admin from './components/Admin'
+
 
 /* Static js */
 
@@ -25,6 +27,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/'component={Main}/>
             <Route path='/journey/:id'component={Journey}/>
+            <Route path='/admin'component={Admin}/>
           </Switch>
           <MusicControl />
           <About />
