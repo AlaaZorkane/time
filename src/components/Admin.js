@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../css/Admin.css'
+import { connect } from 'react-redux'
+import { createEvent } from '../store/actions/createEvent'
 
 
 
@@ -9,6 +11,7 @@ import '../css/Admin.css'
         this.state = {
             id: Number,
             title: "",
+            history: "",
             era: "",
             year: "",
             ytbID: "",
@@ -30,7 +33,8 @@ import '../css/Admin.css'
     }
     handleUserAction (e) {
         e.preventDefault();
-        console.log(this.state)
+        // console.log(this.state)
+        this.props.createEvent(this.state)
     }
      render() {
         return (
@@ -39,6 +43,7 @@ import '../css/Admin.css'
                     <div className="info">
                         <input id="id" type="number" placeholder="id" required onChange={(event) => this.handleUserInput(event)}/>
                         <input id="title" type="text" placeholder="title" required onChange={(event) => this.handleUserInput(event)}/>
+                        <input id="history" type="text" placeholder="history" required onChange={(event) => this.handleUserInput(event)}/>
                         <input id="era" type="text" placeholder="era" required onChange={(event) => this.handleUserInput(event)}/>
                         <input id="year" type="text" placeholder="year" required onChange={(event) => this.handleUserInput(event)}/>
                         <input id="ytbID" type="text" placeholder="ytbID" required onChange={(event) => this.handleUserInput(event)}/>
@@ -67,5 +72,11 @@ import '../css/Admin.css'
      }
  }
 
+const mapDispatchToProps = (dispatch) => {
+    return {
+        createEvent: (event) => dispatch(createEvent(event))
+    }
+}
 
-export default Admin
+
+export default connect(null, mapDispatchToProps)(Admin)

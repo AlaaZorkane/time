@@ -26,7 +26,7 @@ const soundEffects = [
 ]
 /* component */
 const Body = ({event}) => {
-    const { title, year, era, ytbID, place, f1, f2, p1_name, p1_pic, p1_desc, p1_inf, p2_name, p2_pic, p2_desc, p2_inf } = event
+    const { title, year, era, ytbID, place, f1, f2, p1_name, p1_pic, p1_desc, p1_inf, p2_name, p2_pic, p2_desc, p2_inf, history } = event
     /* 
     p1 [
         0 : name
@@ -41,6 +41,7 @@ const Body = ({event}) => {
                 {/* TITLE BLOCK */}
                 <div className="title span-col-3">
                     <h1>{title}</h1>
+                    <h2>{history}</h2>
                 </div>
                 <div className="grid2">
                     {/* INFOS BLOCK */}

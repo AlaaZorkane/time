@@ -18,23 +18,28 @@ import infinityloading from '../../assets/infinityloading.svg'
   and parses it into to the DOM
 */
 
-const Journey = (props) => {
-  const { event } = props
-  if (event) {
-     return (
-       <div className="Journey-Container">
-         <Body event={props.event}/>
-         <Controls />
-       </div>
-     )
-   } else {
-    return (
-      <div className="Journey-Container">
-        <div className="loading-wrapper">
-          <img src={infinityloading} alt="loading"/>
+class Journey extends Component {
+  constructor(props) {
+    super()
+  }
+  render() {
+    const { event } = this.props
+      if (event) {
+        return (
+          <div className="Journey-Container">
+            <Body event={event} key={event.id}/>
+            <Controls />
+          </div>
+        )
+      } else {
+      return (
+        <div className="Journey-Container">
+          <div className="loading-wrapper">
+            <img src={infinityloading} alt="loading"/>
+          </div>
         </div>
-      </div>
-    )
+      )
+    }  
   }
 }
 
@@ -45,7 +50,7 @@ const mapStateToProps = (state, ownProps) => {
   const events = state.firestore.data.events;
   const event = events ? events[id] : null
   return {
-    event: event
+    event
   }
 }
 
