@@ -1,0 +1,11 @@
+.admin-wrapper {
+    font-size: 30px;
+}
+.admin-wrapper input {
+    padding: 0.5rem;
+    margin: 1rem;
+}
+.admin-wrapper textarea {
+    height: 100px;
+    width: 300px;
+}
