@@ -37,27 +37,27 @@ import '../css/Admin.css'
             <div className="admin-wrapper">
                 <form onSubmit={(event) => this.handleUserAction(event)}>
                     <div className="info">
-                        <input id="id" type="text" placeholder="id" onChange={(event) => this.handleUserInput(event)}/>
-                        <input id="title" type="text" placeholder="title" onChange={(event) => this.handleUserInput(event)}/>
-                        <input id="era" type="text" placeholder="era" onChange={(event) => this.handleUserInput(event)}/>
-                        <input id="year" type="text" placeholder="year" onChange={(event) => this.handleUserInput(event)}/>
-                        <input id="ytbID" type="text" placeholder="ytbID" onChange={(event) => this.handleUserInput(event)}/>
-                        <input id="place" type="text" placeholder="place" onChange={(event) => this.handleUserInput(event)}/>
+                        <input id="id" type="number" placeholder="id" required onChange={(event) => this.handleUserInput(event)}/>
+                        <input id="title" type="text" placeholder="title" required onChange={(event) => this.handleUserInput(event)}/>
+                        <input id="era" type="text" placeholder="era" required onChange={(event) => this.handleUserInput(event)}/>
+                        <input id="year" type="text" placeholder="year" required onChange={(event) => this.handleUserInput(event)}/>
+                        <input id="ytbID" type="text" placeholder="ytbID" required onChange={(event) => this.handleUserInput(event)}/>
+                        <input id="place" type="text" placeholder="place" required onChange={(event) => this.handleUserInput(event)}/>
                             <div className="facts">
-                                <textarea id="f1" type="text" placeholder="fact 1" onChange={(event) => this.handleUserInput(event)}></textarea>
-                                <textarea id="f2" type="text" placeholder="fact 2" onChange={(event) => this.handleUserInput(event)}></textarea>
+                                <textarea id="f1" type="text" placeholder="fact 1" required onChange={(event) => this.handleUserInput(event)}></textarea>
+                                <textarea id="f2" type="text" placeholder="fact 2" required onChange={(event) => this.handleUserInput(event)}></textarea>
                             </div>
                     </div>
                     <div className="people">
                         <div className="p1">
-                            <input id="p1_name" type="text" placeholder="p1_name" onChange={(event) => this.handleUserInput(event)}/>
-                            <input id="p1_pic" type="text" placeholder="p1_picURL" onChange={(event) => this.handleUserInput(event)}/>
-                            <textarea id="p1_desc" type="text" placeholder="p1_desc" onChange={(event) => this.handleUserInput(event)}></textarea>
+                            <input id="p1_name" type="text" placeholder="p1_name" required onChange={(event) => this.handleUserInput(event)}/>
+                            <input id="p1_pic" type="text" placeholder="p1_picURL" required onChange={(event) => this.handleUserInput(event)}/>
+                            <textarea id="p1_desc" type="text" placeholder="p1_desc" required onChange={(event) => this.handleUserInput(event)}></textarea>
                         </div>
                         <div className="p2">
-                            <input id="p2_name" type="text" placeholder="p2_name" onChange={(event) => this.handleUserInput(event)}/>
-                            <input id="p2_pic" type="text" placeholder="p2_picURL" onChange={(event) => this.handleUserInput(event)}/>
-                            <textarea id="p2_desc" type="text" placeholder="p2_desc" onChange={(event) => this.handleUserInput(event)}></textarea>
+                            <input id="p2_name" type="text" placeholder="p2_name" required onChange={(event) => this.handleUserInput(event)}/>
+                            <input id="p2_pic" type="text" placeholder="p2_picURL" required onChange={(event) => this.handleUserInput(event)}/>
+                            <textarea id="p2_desc" type="text" placeholder="p2_desc" required onChange={(event) => this.handleUserInput(event)}></textarea>
                         </div>
                     </div>
                     <button>Submit</button>

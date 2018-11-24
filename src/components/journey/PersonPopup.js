@@ -6,7 +6,7 @@ import '../../css/components/journey/PersonPopup.css'
 
 /* JS */
 /* Class Description */
-const PersonPopup = ({name, desc}) => {
+const PersonPopup = ({name, desc, info}) => {
     return (
         <div className="person-wrapper">
             <h1>{name}</h1>
@@ -15,7 +15,7 @@ const PersonPopup = ({name, desc}) => {
             </p>
             <div className="description-wrapper">
                 <p>{desc}</p><br/>
-                <a href={"google.com"} className="more">Learn more</a>
+                <a href={"https://en.wikipedia.org/wiki/" + info} target="_blank" rel="noopener noreferrer" className="more">Learn more</a>
             </div>
         </div>
     )
