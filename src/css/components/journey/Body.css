@@ -43,7 +43,12 @@ ul span {
     padding: 1rem 0
 }
 .Body .title h1 {
-    font-size: calc(6rem + 2vh);
+    font-size: calc(4.7rem + 2vh);
+}
+.Body .title h2 {
+    font-size: calc(1rem + 2vh);
+    color: rgb(253, 216, 7);
+    font-weight: lighter;
 }
 .Body li .era {
     padding-top: 0px
@@ -121,6 +126,12 @@ ul span {
 @media (max-width: 55rem) {
     .grid3 .card {
      width: 38vw
+    }
+    .Body .title h1 {
+        font-size: calc(3rem + 2vh);
+    }
+    .Body .title h2 {
+        font-size: calc(0.5rem + 2vh);
     }
   }
 .grid3 p {
