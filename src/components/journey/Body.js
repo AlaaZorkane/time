@@ -26,7 +26,7 @@ const soundEffects = [
 ]
 /* component */
 const Body = ({event}) => {
-    const { title, year, era, ytbID, place, f1, f2, p1 } = event
+    const { title, year, era, ytbID, place, f1, f2, p1_name, p1_pic, p1_desc, p1_inf, p2_name, p2_pic, p2_desc, p2_inf } = event
     /* 
     p1 [
         0 : name
@@ -64,7 +64,7 @@ const Body = ({event}) => {
                         {/* P_PICTURES BLOCK */}
                         <Popup
                             trigger={   <div className="picture-wrapper">
-                                        <img src={p1[1]} alt={p1[0]}/>
+                                        <img src={p1_pic} alt={p1_name}/>
                                         </div> }
                             onOpen={ () => {soundEffects[0].play()} }
                             onClose= { () => soundEffects[1].play() }
@@ -74,13 +74,13 @@ const Body = ({event}) => {
                                     <a className="close" onClick={close}>
                                         &times;
                                     </a>
-                                    <PersonPopup name={p1[0]} desc={p1[2]}/>
+                                    <PersonPopup info={p1_inf} name={p1_name} desc={p1_desc}/>
                                 </div>
                             )}
                         </Popup>
                         <Popup
                             trigger={   <div className="picture-wrapper">
-                                            <img src={p1[1]} alt={p1[0]}/>
+                                            <img src={p2_pic} alt={p2_name}/>
                                         </div> }
                             onOpen={ () => {soundEffects[0].play()} }
                             onClose= { () => soundEffects[1].play() }
@@ -90,7 +90,7 @@ const Body = ({event}) => {
                                     <a className="close" onClick={close}>
                                         &times;
                                     </a>
-                                    <PersonPopup name={p1[0]} desc={p1[2]}/>
+                                    <PersonPopup info={p2_inf} name={p2_name} desc={p2_desc}/>
                                 </div>
                             )}
                         </Popup>
@@ -107,12 +107,12 @@ const Body = ({event}) => {
                     {/* FACT CARD N1 BLOCK */}
                     <div className="card g1">
                         <h2>Fact 1</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis architecto ducimus minima accusamus repudiandae minus doloribus recusandae, sit magnam saepe hic fugit reprehenderit fugiat nisi ab, excepturi vitae non.</p> 
+                        <p>{f1}</p> 
                     </div>
                     {/* FACT CARD N2 BLOCK */}
                     <div className="card g2">
                         <h2>Fact 2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis architecto ducimus minima accusamus repudiandae minus doloribus recusandae, sit magnam saepe hic fugit reprehenderit fugiat nisi ab, excepturi vitae non.</p>  
+                        <p>{f2}</p>  
                     </div>
                 </div>
             </div>
