@@ -60,7 +60,7 @@ const Body = ({event}) => {
                     <div className="keyPeople gridalt">
                         {/* P_TITLE BLOCK */}
                         <div className="span-col-2">
-                            <h2>Key People</h2>
+                            <h2>Notably</h2>
                         </div>
                         {/* P_PICTURES BLOCK */}
                         <Popup
