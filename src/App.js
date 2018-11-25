@@ -8,7 +8,9 @@ import Header from './components/layout/Header'
 import MusicControl from './components/ui/MusicControl'
 import About from './components/ui/About'
 
+
 import Journey from './components/journey/Journey'
+import Final from './components/journey/Final'
 import Admin from './components/Admin'
 
 
@@ -27,6 +29,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/'component={Main}/>
             <Route path='/journey/:id'component={Journey}/>
+            <Route path='/end'component={Final}/>
             <Route path='/admin'component={Admin}/>
           </Switch>
           <MusicControl />

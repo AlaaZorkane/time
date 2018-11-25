@@ -11,9 +11,8 @@ import question from "../../assets/ui/question.svg"
 /* JS */
 const Tooltip = ({ title, content }) => (
     <div className="tooltip">
-      <div className="header">{title}</div>
       <div className="content">
-        {content}
+        <p>Version: 1.0.0</p>
       </div>
     </div>
   )
@@ -30,7 +29,7 @@ class About extends Component {
                 position="left bottom"
                 on="hover"
                 >
-                <Tooltip title="About" content="Testing some stuff"/>
+                <Tooltip title="Hello :)"/>
                 </Popup>
             </div>
         );
