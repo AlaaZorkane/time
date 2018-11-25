@@ -28,7 +28,7 @@ class Journey extends Component {
         return (
           <div className="Journey-Container">
             <Body event={event} key={event.id}/>
-            <Controls />
+            <Controls id={event.id}/>
           </div>
         )
       } else {
