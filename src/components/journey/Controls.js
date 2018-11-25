@@ -22,6 +22,22 @@ class Controls extends Component {
   }
   
   render() {
+    if (Number(this.props.id) === 37) {
+      return (
+        <div className="Controls">
+          <div className="right-wrapper">
+              <Link to="/end" replace>
+              <img src={arrow} alt="forward" className="right-control"/>
+              </Link>
+          </div>
+          <div className="left-wrapper">
+              <Link to={'/journey/' + (Number(this.props.id) - 1)} replace>
+              <img src={arrow} alt="backward" className="left-control"/>
+              </Link>
+          </div>
+        </div>
+      )
+    }
     if (Number(this.props.id) > 1) {
       return (
         <div className="Controls">

@@ -7,6 +7,7 @@ import { compose } from 'redux'
 /* Components */
 import Body from './Body'
 import Controls from './Controls'
+import Final from './Final'
 
 /* CSS & Assets */
 import '../../css/components/journey/Journey.css'

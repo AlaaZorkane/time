@@ -1,0 +1,35 @@
+.final-wrapper {
+    font-size: calc(2rem + 2vh)
+}
+.final-wrapper h1,h4 {
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.final-wrapper h1 {
+    top: 10%
+}
+.final-wrapper h4 {
+    top: 25%;
+    font-weight: lighter;
+    color: rgb(255, 208, 0);
+    font-style: italic;
+    font-size: calc(0.5rem + 2vh);
+    opacity: 1;
+}
+
+.final-wrapper .video-wrapper {
+    position: absolute;
+    overflow: hidden;
+    border: 4px dotted rgba(73, 7, 73, 0.719);
+    border-radius: 30px;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%)
+}
+.final-wrapper .video-wrapper iframe {
+    width: 50vw;
+    height: 55vh;
+}
