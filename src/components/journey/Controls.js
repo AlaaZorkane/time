@@ -37,7 +37,7 @@ class Controls extends Component {
         <div className="Controls">
           <div className="right-wrapper">
             <Link to={'/journey/' + ++id}>
-            <img src={arrow} alt="forward" className="right-control" onClick={ () => this.setState({id: ++id}) }/>
+            <img src={arrow} alt="forward" className="right-control" onClick={ () => id === 1 ? null : this.setState({id: ++id}) }/>
             </Link>
           </div>
           <div className="left-wrapper">
