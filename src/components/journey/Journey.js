@@ -28,7 +28,7 @@ class Journey extends Component {
         return (
           <div className="Journey-Container">
             <Body event={event} key={event.id}/>
-            <Controls id={event.id}/>
+            <Controls id={this.props.match.params.id}/>
           </div>
         )
       } else {

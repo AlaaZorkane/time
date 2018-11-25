@@ -9,7 +9,7 @@ const eventReducer = (state = initState, action) => {
 
     /* error handling */
     case 'ADD_EVENT_ERROR':
-      console.log('in3l tbon mi ana', action.err)
+      console.log('ERROR:', action.err)
       return state;
 
     /* default state */

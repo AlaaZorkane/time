@@ -19,31 +19,21 @@ import arrow from '../../assets/ui/arrow.svg'
 class Controls extends Component {
   constructor(props) {
     super()
-    this.state = {
-        id: Number,
-    }
   }
-  propsToState() {
-    var id = Number(this.props.id);
-    this.setState({id})
-  }
-  componentDidMount() {
-    this.propsToState();
-  }
+  
   render() {
-    var { id } = this.state
-    if ( this.props.id > 1) {
+    if (Number(this.props.id) > 1) {
       return (
         <div className="Controls">
           <div className="right-wrapper">
-            <Link to={'/journey/' + ++id}>
-            <img src={arrow} alt="forward" className="right-control" onClick={ () => id === 1 ? null : this.setState({id: ++id}) }/>
-            </Link>
+              <Link to={'/journey/' + (Number(this.props.id) + 1)} replace>
+              <img src={arrow} alt="forward" className="right-control"/>
+              </Link>
           </div>
           <div className="left-wrapper">
-            <Link to={'/journey/' + --id}>
-            <img src={arrow} alt="backward" className="left-control" onClick={ () => this.setState({id: --id}) }/>
-            </Link>
+              <Link to={'/journey/' + (Number(this.props.id) - 1)} replace>
+              <img src={arrow} alt="backward" className="left-control"/>
+              </Link>
           </div>
         </div>
       )
@@ -51,13 +41,13 @@ class Controls extends Component {
     return (
         <div className="Controls">
           <div className="right-wrapper">
-            <Link to={'/journey/' + ++id}>
-            <img src={arrow} alt="forward" className="right-control" onClick={ () => this.setState({id: ++id}) }/>
-            </Link>
+              <Link to={'/journey/' + (Number(this.props.id) + 1)} replace>
+              <img src={arrow} alt="forward" className="right-control"/>
+              </Link>
           </div>
         </div>
-    )
+      )
+    }
   }
-}
 
 export default Controls
