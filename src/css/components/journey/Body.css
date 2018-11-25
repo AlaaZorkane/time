@@ -135,7 +135,7 @@ ul span {
     }
   }
 .grid3 p {
-
+    font-size: calc(0.8rem + 1vmin)
 }
 
 .grid3 .g1 {

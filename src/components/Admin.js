@@ -21,9 +21,11 @@ import { createEvent } from '../store/actions/createEvent'
             p1_name: "",
             p1_pic: "",
             p1_desc: "",
+            p1_inf: "",
             p2_name: "",
             p2_pic: "",
-            p2_desc: ""
+            p2_desc: "",
+            p2_inf: ""
         }
      }
      handleUserInput (e) {
@@ -57,11 +59,13 @@ import { createEvent } from '../store/actions/createEvent'
                         <div className="p1">
                             <input id="p1_name" type="text" placeholder="p1_name" required onChange={(event) => this.handleUserInput(event)}/>
                             <input id="p1_pic" type="text" placeholder="p1_picURL" required onChange={(event) => this.handleUserInput(event)}/>
+                            <input id="p1_inf" type="text" placeholder="p1_wikilink" required onChange={(event) => this.handleUserInput(event)}/>
                             <textarea id="p1_desc" type="text" placeholder="p1_desc" required onChange={(event) => this.handleUserInput(event)}></textarea>
                         </div>
                         <div className="p2">
                             <input id="p2_name" type="text" placeholder="p2_name" required onChange={(event) => this.handleUserInput(event)}/>
                             <input id="p2_pic" type="text" placeholder="p2_picURL" required onChange={(event) => this.handleUserInput(event)}/>
+                            <input id="p2_inf" type="text" placeholder="p2_wikilink" required onChange={(event) => this.handleUserInput(event)}/>
                             <textarea id="p2_desc" type="text" placeholder="p2_desc" required onChange={(event) => this.handleUserInput(event)}></textarea>
                         </div>
                     </div>

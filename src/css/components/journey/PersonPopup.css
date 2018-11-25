@@ -10,7 +10,7 @@
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     text-decoration: underline;
-    font-size: calc( 3rem + 2vmin )
+    font-size: calc( 0.5rem + 2vw )
 }
 .separator {
     position: relative;
