@@ -12,7 +12,7 @@ import question from "../../assets/ui/question.svg"
 const Tooltip = ({ title, content }) => (
     <div className="tooltip">
       <div className="content">
-        <p>Version: 1.0.0</p>
+        <p>Version: 1.0.1</p>
       </div>
     </div>
   )
