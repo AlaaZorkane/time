@@ -90,5 +90,6 @@
     font-family: 'Source Sans Pro';
     display: inline-block;
     padding: 2rem 0 0.5rem;
-    color: #272727
+    color: #272727;
+    transition: all 1s 
 }

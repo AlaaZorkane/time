@@ -14,7 +14,8 @@ constructor(props) {
     this.state = {
         name:"",
         email: "",
-        user_type: ""
+        password: "",
+        user_type: "",
     }
 }
 handleUserInput (e) {
@@ -27,14 +28,18 @@ handleUserAction (e) {
     console.log(this.state)
 }
 render() {
+    if (this.props.firstTime) {
     return (
         <Fragment>
-        <form onSubmit={(event) => this.handleUserAction(event)} className="LoginForm">
+        <form netlify onSubmit={(event) => this.handleUserAction(event)} className="LoginForm">
             <div className="input_field">
                 <input placeholder="Enter your name" required type="text" id="name" onChange={(event) => this.handleUserInput(event)}/>
             </div>
             <div className="input_field">
                 <input placeholder="Enter your Email" required type="email" id="email" onChange={(event) => this.handleUserInput(event)}/>
+            </div>
+            <div className="input_field">
+                <input placeholder="Enter a Password" required type="password" id="password" onChange={(event) => this.handleUserInput(event)}/>
             </div>
             <div className="input_field">
                 <div className="prof">
@@ -46,13 +51,34 @@ render() {
                         <option value="other">Other</option>
                     </select> 
                 </div>
-            <div className="btn_container">
-                <Link to="/journey/1"><button className="btn">Launch</button></Link>
             </div>
+            <div className="btn_container">
+                <Link to="/journey/1">
+                    <button className="btn">Launch</button>
+                </Link>
             </div>
         </form>
         </Fragment>
     )
+    } else {
+        return (
+            <Fragment>
+            <form netlify onSubmit={(event) => this.handleUserAction(event)} className="LoginForm">
+                <div className="input_field">
+                    <input placeholder="Enter your Email" required type="email" id="email" onChange={(event) => this.handleUserInput(event)}/>
+                </div>
+                <div className="input_field">
+                    <input placeholder="Enter your Password" required type="password" id="password" onChange={(event) => this.handleUserInput(event)}/>
+                </div>
+                <div className="btn_container">
+                    <Link to="/journey/1">
+                        <button className="btn">Continue</button>
+                    </Link>
+                </div>
+            </form>
+            </Fragment>
+        )
+    }
 }
 }
 

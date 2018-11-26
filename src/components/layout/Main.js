@@ -38,6 +38,12 @@ const soundEffects = [
 class Main extends Component {
     constructor(props) {
         super()
+        this.state = {
+            firstTime: true
+        }
+    }
+    handleUserAction(e) {
+        this.setState({firstTime: !(this.state.firstTime)});
     }
     render() {
         return (
@@ -60,9 +66,12 @@ class Main extends Component {
                             <a className="close" onClick={close}>
                                 &times;
                             </a>
-                            <h1 className="login_Title">Begin Your <span className="journey">Journey</span>!</h1>
+                            <h1 className="login_Title">{this.state.firstTime ? "Begin" : "Continue"} Your <span className="journey">Journey</span>!</h1>
                             <hr/>
-                            <LoginForm />
+                                <LoginForm firstTime={this.state.firstTime}/>
+                            <div className="signin-wrapper">
+                                <p>{this.state.firstTime ? "Already started a journey?" : "Your first time here?"} <span onClick={ (event) => this.handleUserAction(event) }>Click here!</span></p>
+                            </div>
                         </div>
                     )}
                 </Popup>
